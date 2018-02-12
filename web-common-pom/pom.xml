@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>common-pom</artifactId>
+        <groupId>com.chace0120.www</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../common-pom/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>web-common-pom</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../web-common-lib</module>
+    </modules>
+
+    <properties>
+        <spring.session.version>1.3.2.RELEASE</spring.session.version>
+        <dozer.version>5.5.1</dozer.version>
+        <mybatis.spring.boot.version>1.3.1</mybatis.spring.boot.version>
+    </properties>
+
+    <dependencies>
+        <!--spring boot starter相关依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+            <version>${spring.session.version}</version>
+        </dependency>
+    </dependencies>
+</project>
